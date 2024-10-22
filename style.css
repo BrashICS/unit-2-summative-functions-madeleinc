@@ -5,9 +5,11 @@
 
 /* Using font-size: larger to make things pop. Feel free to change. */
 body {
-    background-color:lightcyan;
+    background-color:#e4f7de;
     margin: 20px;
     font-size: larger;
+    color: #738c6a;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Make the font a bit bigger on buttons and input boxes */
@@ -20,7 +22,26 @@ button, input {
     vertical-align: auto;
 }
 
+.button_style {
+    border-style:solid;
+    border-color: #607558;
+    color: #e4f7de;
+    background-color: #738c6a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* Rounding and Quadratics input number boxes. Add class="short_number" to your input boxes */
-.short_number {
+.input_box_style {
     width: 50px;
+    background-color: #f1fbed;
+    color: #738c6a;
+    border-style: solid;
+    border-color: #607558;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr {
+    margin-bottom:30px;
+    margin-top: 30px;
+    border-color: #a8ca9b;
 }

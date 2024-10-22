@@ -20,7 +20,7 @@
         
         <p>
             Round answers to the nearest
-            <input type="number" id="rounding" value="4" placeholder="0" min="0" max="10"  class="short_number">
+            <input type="number" id="rounding" value="4" placeholder="0" min="0" max="10"  class="input_box_style">
             decimals.
         </p>
 
@@ -30,26 +30,93 @@
         <div>
             <h4>Part 1 - Geometry</h4>
             
+            <p>
+                Enter the values of "length", "width" and "height" of a rectangular based prism:
+            </p>
+
+            <label for="length">length:</label>
+            <input id="length" name="length" type="number"
+            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="width">width:</label>
+            <input id="width" name="width" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="height">height:</label>
+            <input id="height" name="height" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <button class="button_style" id="rect_prism_volume">Calculate the Volume</button> &nbsp;
+
+            <button class="button_style" id="rect_prism_area">Calculate the Area</button>
+
+            <p>
+              Enter the value of "radius" of a sphere:  
+            </p>
+
+            <label for="radius">radius:</label>
+            <input id="radius" name="radius" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <button class="button_style" id="sphere_volume">Calculate the Volume</button> &nbsp;
+
+            <button class="button_style" id="sphere_area">Calculate the Area</button>         
         </div>
         
+        <hr>
+         <!-- Lines -->
+        <div>
+            <h4>
+             Part 1 - Lines   
+            </h4>
+
+            <p>
+                Enter the values of "x1", "y1", "x2", and "y2" of a line:
+            </p>
+
+            <label for="x1">x1:</label>
+            <input id="x1" name="x1" type="number"
+            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="y1">y1:</label>
+            <input id="y1" name="y1" type="number"
+            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="x2">x2:</label>
+            <input id="x2" name="x2" type="number"
+            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="y2">y2:</label>
+            <input id="y2" name="y2" type="number"
+            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <button class="button_style" id="slope">Find the Slope</button>
+
+            <button class="button_style" id="length">Find the Length</button>
+
+            <button class="button_style" id="midpoint">Find the Midpoint</button>
+
+        </div>
+
         <hr>
 
         <!-- Quadratics -->
         <div>
             <h4>Part 2 - Quadratics</h4>
+            
             <p>
                 Enter the values of "a", "b", and "c" of a quadratic in standard form:
             </p>
             
             <label for="a">a:</label>
-            <input id="a" name="a" type="number" value="1" placeholder="1" autocomplete="off" class="short_number"> &nbsp;
-            <label for="b">b:</label>
-            <input id="b" type="number" value="1" placeholder="1" autocomplete="off" class="short_number"> &nbsp;
-            <label for="c">c:</label>
-            <input id="c" type="number" value="1" placeholder="1" autocomplete="off" class="short_number">
+            <input id="a" name="a" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
-            <button id="zeros">Find the Zeros</button> 
-            <button id="vertex">Find the Vertex</button>
+            <label for="b">b:</label>
+            <input id="b" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <label for="c">c:</label> 
+            <input id="c" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+            <button class="button_style" id="zeros">Find the Zeros</button> &nbsp;
+            
+            <button class="button_style" id="vertex">Find the Vertex</button>
 
             <!-- Output for the zeros or vertex -->
             <div id="quadratic_output"></div>
