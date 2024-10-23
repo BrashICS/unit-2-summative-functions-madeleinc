@@ -68,3 +68,7 @@ function length(x1,y1,x2,y2){
     let distance = Math.sqrt(delta(x2,x1)**2 + delta(y2,y1)**2)
     return distance;
 }
+
+function rect_prism_volume(){
+    let rect_volume = 
+}
