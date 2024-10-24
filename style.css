@@ -20,17 +20,13 @@ button, input {
 button:hover {
     color:#738c6a;
     background-color:#f1fbed;
-    font-size: 1.01em;
-    transition-duration: 0.5s;
-    transition-property: color, background-color, font-size;
+
 }
 
 input:hover{
     color:#e4f7de;
     background-color:#738c6a;
-    font-size: 1.01em;
-    transition-duration: 0.5s;
-    transition-property: color, background-color, font-size;
+
 }
 
 /* Align the geometry shapes with the title a little better */
