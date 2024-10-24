@@ -43,11 +43,13 @@
             <label for="height">height:</label>
             <input id="height" name="height" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
-            <button class="button_style" id="rect_prism_volume">Calculate the Volume</button> &nbsp;
+            <button class="button_style" id="rect_volume_button">Calculate the Volume</button> &nbsp;
 
-            <button class="button_style" id="rect_prism_area">Calculate the Area</button>
+            <button class="button_style" id="rect_area_button">Calculate the Area</button>
 
-            <span id="answer"></span>
+            <div class="output" id="rect_volume_output"></div>
+
+            <div class="output" id="rect_area_output"></div>
 
             <p>
               Enter the value of "radius" of a sphere:  
@@ -56,9 +58,16 @@
             <label for="radius">radius:</label>
             <input id="radius" name="radius" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
-            <button class="button_style" id="sphere_volume">Calculate the Volume</button> &nbsp;
+            <button class="button_style" id="sphere_volume_button">Calculate the Volume</button> &nbsp;
 
-            <button class="button_style" id="sphere_area">Calculate the Area</button>         
+            <button class="button_style" id="sphere_area_button">Calculate the Area</button> 
+            
+            <div class="output" id="sphere_volume_output">
+            </div>
+
+            <div class="output" id="sphere_area_output">
+            </div>
+
         </div>
         
         <hr>
@@ -88,11 +97,18 @@
             <input id="y2" name="y2" type="number"
             value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
-            <button class="button_style" id="line_slope">Find the Slope</button>
+            <button class="button_style" id="line_slope_button">Find the Slope</button> &nbsp;
 
-            <button class="button_style" id="line_length">Find the Length</button>
+            <button class="button_style" id="line_length_button">Find the Length</button> &nbsp;
 
-            <button class="button_style" id="midpoint">Find the Midpoint</button>
+            <button class="button_style" id="midpoint_button">Find the Midpoint</button>
+
+            <div class="output" id="line_slope_output">
+            </div>
+
+            <div class="output" id="line_length_output"></div>
+
+            <div class="output" id="midpoint_output"></div>
 
         </div>
 

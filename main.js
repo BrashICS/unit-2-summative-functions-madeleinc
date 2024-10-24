@@ -11,13 +11,13 @@
 /*** Event Listeners ***/
 document.getElementById("zeros").addEventListener("click", zeros);
 document.getElementById("vertex").addEventListener("click", vertex);
-document.getElementById("rect_prism_volume").addEventListener("click", rect_prism_volume);
-document.getElementById("rect_prism_area").addEventListener("click", rect_prism_area);
-document.getElementById("sphere_volume").addEventListener("click", sphere_volume)
-document.getElementById("sphere_area").addEventListener("click", sphere_area)
-document.getElementById("line_slope").addEventListener("click", line_slope)
-document.getElementById("line_length").addEventListener("click", line_length)
-document.getElementById("midpoint").addEventListener("click", midpoint)
+document.getElementById("rect_volume_button").addEventListener("click", rect_prism_volume);
+document.getElementById("rect_area_button").addEventListener("click", rect_prism_area);
+document.getElementById("sphere_volume_button").addEventListener("click", sphere_volume)
+document.getElementById("sphere_area_button").addEventListener("click", sphere_area)
+document.getElementById("line_slope_button").addEventListener("click", line_slope)
+document.getElementById("line_length_button").addEventListener("click", line_length)
+document.getElementById("midpoint_button").addEventListener("click", midpoint)
 
 
 /*** Functions ***/
@@ -75,7 +75,7 @@ function rect_prism_volume(){
     let width = Number(document.getElementById("length").value);
     let height = Number(document.getElementById("length").value);
     let rect_volume_answer = round_user(length * width * height); 
-    document.getElementById("rect_prism_volume").textContent = `The volume of the rectangular prism is ${rect_volume_answer}.`;
+    document.getElementById("rect_volume_output").textContent = `The volume of the rectangular prism is ${rect_volume_answer}.`;
 
 }
 
@@ -85,21 +85,21 @@ function rect_prism_area(){
     let width = Number(document.getElementById("width").value);
     let height = Number(document.getElementById("height").value);
     let rect_area_answer = round_user(2*(width*length+height*length+height*width));
-    document.getElementById("rect_prism_area").textContent = `The area of the rectangular prism is ${rect_area_answer}.`;
+    document.getElementById("rect_area_output").textContent = `The area of the rectangular prism is ${rect_area_answer}.`;
 }
 
 //Calculating sphere volume for wepbage
 function sphere_volume(){
     let radius = Number(document.getElementById("radius").value);
     let sphere_volume_answer = round_user(4/3*Math.PI*radius**3);
-    document.getElementById("sphere_volume").textContent = `The volume of the sphere is ${sphere_volume_answer}.`;
+    document.getElementById("sphere_volume_output").textContent = `The volume of the sphere is ${sphere_volume_answer}.`;
 }
 
 //Calculating sphere area for wepbage
 function sphere_area(){
     let radius = Number(document.getElementById("radius").value);
     let sphere_area_answer = round_user(4*Math.PI*radius);
-    document.getElementById("sphere_area").textContent = `The area of the sphere is ${sphere_area_answer}.`;
+    document.getElementById("sphere_area_output").textContent = `The area of the sphere is ${sphere_area_answer}.`;
 }
 
 //Calculating line slope for wepbage
@@ -109,7 +109,7 @@ function line_slope(){
     let x2 = Number(document.getElementById("x2").value);
     let y2 = Number(document.getElementById("y2").value);
     let slope_answer = round_user(slope(x1,y1,x2,y2));
-    document.getElementById("line_slope").textContent = `The slope of the line is ${slope_answer}.`;
+    document.getElementById("line_slope_output").textContent = `The slope of the line is ${slope_answer}.`;
 }
 
 //Calculating line length for wepbage
@@ -119,7 +119,7 @@ function line_length(){
     let x2 = Number(document.getElementById("x2").value);
     let y2 = Number(document.getElementById("y2").value);
     let length_answer = round_user(length(x1,y1,x2,y2));
-    document.getElementById("line_length").textContent = `The length of the line is ${length_answer}.`;
+    document.getElementById("line_length_output").textContent = `The length of the line is ${length_answer}.`;
 }
 
 //Calculating line midpoint for wepbage
@@ -130,5 +130,5 @@ function midpoint(){
     let y2 = Number(document.getElementById("y2").value);
     let midpoint_x = round_user(average(x1,x2));
     let midpoint_y = round_user(average(y1,y2));    
-    document.getElementById("midpoint").textContent = `The midpoint of the line is (${midpoint_x},${midpoint_y}).`;
+    document.getElementById("midpoint_output").textContent = `The midpoint of the line is (${midpoint_x},${midpoint_y}).`;
 }
