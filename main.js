@@ -142,8 +142,8 @@ function vertex() {
     let a = Number(document.getElementById("a").value);
     let b = Number(document.getElementById("b").value);
     let c = Number(document.getElementById("c").value);
-    let x = round_user((-1 * b)/(2 * a))
-    let y = round_user(y_quad(a, b, c, x))
+    let x = round_user((-1 * b)/(2 * a));
+    let y = round_user(y_quad(a, b, c, x));
     document.getElementById("quadratic_vertex_output").textContent = `The quadratic vertex is (${x},${y}).`;
     console.log(`Vertex is (${x},${y})`);
 }
