@@ -134,7 +134,7 @@ function zeros() {
     let zeros_answer_1 = round_user((-1 * b) + (Math.sqrt(b**2 - (4 * a * c)))/ (2 * a));
     let zeros_answer_2 = round_user((-1 * b) - (Math.sqrt(b**2 - (4 * a * c)))/ (2 * a));
     document.getElementById("quadratic_zeros_output").textContent = `The quadratic's zeros are (${zeros_answer_1},0) and (${zeros_answer_2},0).`;
-    console.log(`Zeroes are (${zeros_answer_1},0) and (${zeros_answer_2},0).`) 
+    console.log(`Zeroes are (${zeros_answer_1},0) and (${zeros_answer_2},0).`); 
 }
 
 //PART2 "HTML" - 3. Determining the vertex of a quadratic using user-inputs for a, b, and c
