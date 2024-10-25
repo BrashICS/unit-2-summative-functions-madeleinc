@@ -17,6 +17,12 @@ button, input {
     font-size: large;
 }
 
+/* Align the geometry shapes with the title a little better */
+.heading_img {
+    vertical-align: auto;
+}
+
+/*PART3 - Extras.*/
 button:hover {
     color:#738c6a;
     background-color:#f1fbed;
@@ -27,11 +33,6 @@ input:hover{
     color:#e4f7de;
     background-color:#738c6a;
 
-}
-
-/* Align the geometry shapes with the title a little better */
-.heading_img {
-    vertical-align: auto;
 }
 
 .button_style {

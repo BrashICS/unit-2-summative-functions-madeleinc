@@ -18,6 +18,8 @@ document.getElementById("line_length_button").addEventListener("click", line_len
 document.getElementById("midpoint_button").addEventListener("click", midpoint);
 document.getElementById("zeros_button").addEventListener("click", zeros);
 document.getElementById("vertex_button").addEventListener("click", vertex);
+document.getElementById("cone_volume_button").addEventListener("click", cone_volume);
+document.getElementById("cone_area_button").addEventListener("click", cone_area);
 
 /*** Functions ***/
 
@@ -146,4 +148,21 @@ function vertex() {
     let y = round_user(y_quad(a, b, c, x));
     document.getElementById("quadratic_vertex_output").textContent = `The quadratic's vertex is (${x},${y}).`;
     console.log(`Vertex is (${x},${y})`);
+}
+
+//PART3 - Extras. Cone volume and area
+function cone_volume(){
+    let radius2 = Number(document.getElementById("radius2").value);
+    let height2 = Number(document.getElementById("height2").value);
+    let cone_volume_answer = round_user(Math.PI*(radius2**2)*(height2/3));
+    document.getElementById("cone_volume_output").textContent = `The volume of the cone is ${cone_volume_answer}.`;
+    console.log(`Cone volume is ${cone_volume_answer}.`);
+}
+
+function cone_area(){
+    let radius2 = Number(document.getElementById("radius2").value);
+    let height2 = Number(document.getElementById("height2").value);
+    let cone_area_answer = round_user(Math.PI*radius2*(radius2+Math.sqrt(height2**2 + radius2**2)));
+    document.getElementById("cone_area_output").textContent = `The area of the cone is ${cone_area_answer}.`;
+    console.log(`Cone area is ${cone_area_answer}.`);
 }
