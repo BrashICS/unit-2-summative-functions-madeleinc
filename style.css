@@ -61,4 +61,6 @@ hr {
 
 .output{
     margin: 20px;
+    font-style: italic;
+    font-size: large;
 }
