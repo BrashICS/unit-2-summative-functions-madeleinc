@@ -122,8 +122,8 @@ function midpoint(){
 
 //PART2 JS - 1. Creating the function y_quad(a,b,c,x) which takes the coefficients from the standard form quadratic equation.
 function y_quad(a, b, c, x) {
-    let y = a*(x**2) + b*x + c
-    return y
+    let y = a*(x**2) + b*x + c;
+    return y;
 }
 
 //PART2 "HTML" - 2.  Determining the zeros of a quadratic using user-inputs for a, b, and c
