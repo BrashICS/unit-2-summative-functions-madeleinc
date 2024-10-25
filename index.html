@@ -34,43 +34,45 @@
                 Enter the values of "length", "width" and "height" of a rectangular based prism:
             </p>
 
+            <!-- PART1 HTML - 6. Creating the input boxes for length, width and height for volume and area calculation. -->
             <label for="length">length:</label>
             <input id="length" name="length" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="width">width:</label>
             <input id="width" name="width" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="height">height:</label>
             <input id="height" name="height" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
+
+            <!--PART1 HTML - 7. Creating the button for the rectangular prism's volume.-->
             <button class="button_style" id="rect_volume_button">Calculate the Volume</button> &nbsp;
 
+            <!--PART1 HTML - 8. Creating the button for the rectangular prism's area.-->
             <button class="button_style" id="rect_area_button">Calculate the Area</button>
 
+            <!--Output for the rectangular prism's volume and area.-->
             <div class="output" id="rect_volume_output"></div>
-
             <div class="output" id="rect_area_output"></div>
 
             <p>
               Enter the value of "radius" of a sphere:  
             </p>
 
+            <!--PART1 HTML - 6 cont. Creating the output box for radius for volume and area calculation.-->
             <label for="radius">radius:</label>
             <input id="radius" name="radius" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
+            <!--PART1 HTML - 9. Creating the buttons for the volume and area of a sphere.-->
             <button class="button_style" id="sphere_volume_button">Calculate the Volume</button> &nbsp;
-
             <button class="button_style" id="sphere_area_button">Calculate the Area</button> 
-            
-            <div class="output" id="sphere_volume_output">
-            </div>
-
-            <div class="output" id="sphere_area_output">
-            </div>
+    
+            <!--Output for the sphere's volume and area.-->
+            <div class="output" id="sphere_volume_output"></div>
+            <div class="output" id="sphere_area_output"></div>
 
         </div>
-        
+
         <hr>
+
          <!-- Lines -->
         <div>
             <h4>
@@ -81,33 +83,30 @@
                 Enter the values of "x1", "y1", "x2", and "y2" of a line:
             </p>
 
+            <!--PART1 HTML - 10. Creating the input boxes for x1, y1, x2 and y2.-->
             <label for="x1">x1:</label>
             <input id="x1" name="x1" type="number"
             value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="y1">y1:</label>
             <input id="y1" name="y1" type="number"
             value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="x2">x2:</label>
             <input id="x2" name="x2" type="number"
             value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="y2">y2:</label>
             <input id="y2" name="y2" type="number"
             value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
+            <!--PART1 - 11. Creating the buttons for the slope and length of a line segment.-->
             <button class="button_style" id="line_slope_button">Find the Slope</button> &nbsp;
-
             <button class="button_style" id="line_length_button">Find the Length</button> &nbsp;
 
+            <!--PART1 HTML - 12. Creating the button for the midpoint of the line segment.-->
             <button class="button_style" id="midpoint_button">Find the Midpoint</button>
 
-            <div class="output" id="line_slope_output">
-            </div>
-
+            <!--Output for the line segment's slope, length and midpoint.-->
+            <div class="output" id="line_slope_output"></div>
             <div class="output" id="line_length_output"></div>
-
             <div class="output" id="midpoint_output"></div>
 
         </div>
@@ -122,22 +121,22 @@
                 Enter the values of "a", "b", and "c" of a quadratic in standard form:
             </p>
             
+            <!--Input boxes for a, b and c for zeros and vertex calculation.-->
             <label for="a">a:</label>
             <input id="a" name="a" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="b">b:</label>
             <input id="b" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
-
             <label for="c">c:</label> 
             <input id="c" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
 
+            <!--PART2 HTML - 2. Creating the button to calculate zeros.-->
             <button class="button_style" id="zeros_button">Find the Zeros</button> &nbsp;
             
+            <!--PART2 HTML - 3. Creating the button to calculate vertex.-->
             <button class="button_style" id="vertex_button">Find the Vertex</button>
 
             <!-- Output for the zeros or vertex -->
             <div class="output" id="quadratic_zeros_output"></div>
-
             <div class="output" id="quadratic_vertex_output"></div>
 
         </div>
