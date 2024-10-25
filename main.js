@@ -9,8 +9,6 @@
 'use strict';
 
 /*** Event Listeners ***/
-document.getElementById("zeros_button").addEventListener("click", zeros);
-document.getElementById("vertex_button").addEventListener("click", vertex);
 document.getElementById("rect_volume_button").addEventListener("click", rect_prism_volume);
 document.getElementById("rect_area_button").addEventListener("click", rect_prism_area);
 document.getElementById("sphere_volume_button").addEventListener("click", sphere_volume)
@@ -18,7 +16,8 @@ document.getElementById("sphere_area_button").addEventListener("click", sphere_a
 document.getElementById("line_slope_button").addEventListener("click", line_slope)
 document.getElementById("line_length_button").addEventListener("click", line_length)
 document.getElementById("midpoint_button").addEventListener("click", midpoint)
-
+document.getElementById("zeros_button").addEventListener("click", zeros);
+document.getElementById("vertex_button").addEventListener("click", vertex);
 
 /*** Functions ***/
 
