@@ -20,6 +20,9 @@ document.getElementById("zeros_button").addEventListener("click", zeros);
 document.getElementById("vertex_button").addEventListener("click", vertex);
 document.getElementById("cone_volume_button").addEventListener("click", cone_volume);
 document.getElementById("cone_area_button").addEventListener("click", cone_area);
+document.getElementById("hyp_side_button").addEventListener("click", hypotenuse_side);
+document.getElementById("adj_side_button").addEventListener("click", adjecent_side);
+document.getElementById("opp_side_button").addEventListener("click", opposite_side);
 
 /*** Functions ***/
 
@@ -150,7 +153,7 @@ function vertex() {
     console.log(`Vertex is (${x},${y})`);
 }
 
-//PART3 - Extras. Cone volume and area
+//PART3 - Extras. 
 function cone_volume(){
     let radius2 = Number(document.getElementById("radius2").value);
     let height2 = Number(document.getElementById("height2").value);
@@ -165,4 +168,41 @@ function cone_area(){
     let cone_area_answer = round_user(Math.PI*radius2*(radius2+Math.sqrt(height2**2 + radius2**2)));
     document.getElementById("cone_area_output").textContent = `The area of the cone is ${cone_area_answer}.`;
     console.log(`Cone area is ${cone_area_answer}.`);
+}
+
+function hypotenuse_side(){
+    let hyp = Number(document.getElementById("hyp_side").value);
+    let adj = Number(document.getElementById("adj_side").value);
+    let opp = Number(document.getElementById("opp_side").value);
+    let hyp_side_answer = round_user(Math.sqrt(adj**2 + opp**2));
+    document.getElementById("hyp_side_output").textContent = `The hypotenuse side equals ${hyp_side_answer}.`;
+    console.log(`Hypotenuse side is ${hyp_side_answer}.`);
+}
+
+function adjecent_side(){
+    let hyp = Number(document.getElementById("hyp_side").value);
+    let adj = Number(document.getElementById("adj_side").value);
+    let opp = Number(document.getElementById("opp_side").value);
+    let adj_side_answer = round_user(Math.sqrt(hyp**2 - opp**2));
+    if (opp > hyp){
+        document.getElementById("adj_side_output").textContent = `Opposite side "${opp}" cannot be bigger than hypotenuse side "${hyp}".`;
+    }
+    else{
+    document.getElementById("adj_side_output").textContent = `The adjecent side equals ${adj_side_answer}.`;
+    console.log(`Adjecent side is ${adj_side_answer}.`);
+    }
+}
+
+function opposite_side(){
+    let hyp = Number(document.getElementById("hyp_side").value);
+    let adj = Number(document.getElementById("adj_side").value);
+    let opp = Number(document.getElementById("opp_side").value);
+    let opp_side_answer = round_user(Math.sqrt(hyp**2 - adj**2));
+    if (adj > hyp){
+        document.getElementById("opp_side_output").textContent = `Adjecent side "${adj}" cannot be bigger than hypotenuse side "${hyp}".`;
+    }
+    else{
+    document.getElementById("opp_side_output").textContent = `The oppposite side equals ${opp_side_answer}.`;
+    console.log(`Opposite side is ${opp_side_answer}.`);
+    }
 }

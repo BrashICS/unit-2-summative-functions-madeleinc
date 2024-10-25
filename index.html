@@ -20,7 +20,7 @@
         
         <p>
             Round answers to the nearest
-            <input type="number" id="rounding" value="4" placeholder="0" min="0" max="10"  class="input_box_style">
+            <input type="number" id="rounding" value="0" placeholder="0" min="0" max="10"  class="input_box_style">
             decimals.
         </p>
 
@@ -38,11 +38,11 @@
 
             <!-- PART1 HTML - 6. Creating the input boxes for length, width and height for volume and area calculation. -->
             <label for="length">length:</label>
-            <input id="length" name="length" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="length" name="length" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="width">width:</label>
-            <input id="width" name="width" type="number" value="2" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="width" name="width" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="height">height:</label>
-            <input id="height" name="height" type="number" value="3" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="height" name="height" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
 
 
             <!--PART1 HTML - 7. Creating the button for the rectangular prism's volume.-->
@@ -61,7 +61,7 @@
 
             <!--PART1 HTML - 6 cont. Creating the output box for radius for volume and area calculation.-->
             <label for="radius">radius:</label>
-            <input id="radius" name="radius" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="radius" name="radius" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
 
             <!--PART1 HTML - 9. Creating the buttons for the volume and area of a sphere.-->
             <button class="button_style" id="sphere_volume_button">Calculate the Volume</button> &nbsp;
@@ -77,9 +77,9 @@
             </p>
 
             <label for="radius2">radius:</label>
-            <input id="radius2" name="radius2" type="number" value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="radius2" name="radius2" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="height2">height:</label>
-            <input id="height2" name="height2" type="number" value="2" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="height2" name="height2" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
 
             <button class="button_style" id="cone_volume_button">Calculate the Volume</button> &nbsp;
             <button class="button_style" id="cone_area_button">Calculate the Area</button>
@@ -104,16 +104,16 @@
             <!--PART1 HTML - 10. Creating the input boxes for x1, y1, x2 and y2.-->
             <label for="x1">x1:</label>
             <input id="x1" name="x1" type="number"
-            value="1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="y1">y1:</label>
             <input id="y1" name="y1" type="number"
-            value="2" placeholder="2" autocomplete="off" class="input_box_style"> &nbsp;
+            value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="x2">x2:</label>
             <input id="x2" name="x2" type="number"
-            value="3" placeholder="3" autocomplete="off" class="input_box_style"> &nbsp;
+            value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="y2">y2:</label>
             <input id="y2" name="y2" type="number"
-            value="4" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
 
             <!--PART1 - 11. Creating the buttons for the slope and length of a line segment.-->
             <button class="button_style" id="line_slope_button">Find the Slope</button> &nbsp;
@@ -143,11 +143,11 @@
             
             <!--Input boxes for a, b and c for zeros and vertex calculation.-->
             <label for="a">a:</label>
-            <input id="a" name="a" type="number" value="-1" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="a" name="a" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="b">b:</label>
-            <input id="b" type="number" value="2" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="b" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
             <label for="c">c:</label> 
-            <input id="c" type="number" value="3" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <input id="c" type="number" value="0" placeholder="0" autocomplete="off" class="input_box_style"> &nbsp;
 
             <!--PART2 HTML - 2. Creating the button to calculate zeros.-->
             <button class="button_style" id="zeros_button">Find the Zeros</button> &nbsp;
@@ -161,7 +161,37 @@
 
         </div>
 
-        
+        <hr>
+
+        <!--PART3 - Extras. Triangles-->
+        <div>
+            <h4>
+                Triangles
+            </h4>
+            
+            <p>
+                Enter the values of "hypotenuse", "adjecent", and "opposite" of a right angle triangle (input box being solved for will be ignored):
+            </p>
+            
+            <!--Input boxes.-->
+            <label for="hyp_side">hypotenuse:</label>
+            <input id="hyp_side" name="hyp_side" type="number" value="0" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <label for="adj_side">adjecent:</label>
+            <input id="adj_side" name="adj_side" type="number" value="0" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+            <label for="opp_side">opposite:</label> 
+            <input id="opp_side" name="opp_side" type="number" value="0" placeholder="1" autocomplete="off" class="input_box_style"> &nbsp;
+
+
+            <button class="button_style" id="hyp_side_button">Find the Hypotenuse Side</button> &nbsp;
+            <button class="button_style" id="adj_side_button">Find the Adjecent Side</button>&nbsp;
+            <button class="button_style" id="opp_side_button">Find the Opposite Side</button>
+
+            <div class="output" id="hyp_side_output"></div>
+            <div class="output" id="adj_side_output"></div>
+            <div class="output" id="opp_side_output"></div>
+
+        </div>
+
 
     </body>
 </html>
