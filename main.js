@@ -54,8 +54,8 @@ function length(x1,y1,x2,y2){
 //PART1 "HTML" - 7. Calculating the rectangular prism's volume for webpage using user's input.
 function rect_prism_volume(){
     let length = Number(document.getElementById("length").value);
-    let width = Number(document.getElementById("length").value);
-    let height = Number(document.getElementById("length").value);
+    let width = Number(document.getElementById("width").value);
+    let height = Number(document.getElementById("height").value);
     let rect_volume_answer = round_user(length * width * height); 
     document.getElementById("rect_volume_output").textContent = `The volume of the rectangular prism is ${rect_volume_answer}.`;
     console.log(`Rectangular prism volume is ${rect_volume_answer}.`);
@@ -131,8 +131,8 @@ function zeros() {
     let a = Number(document.getElementById("a").value);
     let b = Number(document.getElementById("b").value);
     let c = Number(document.getElementById("c").value);
-    let zeros_answer_1 = round_user((-1 * b) + (Math.sqrt(b**2 - (4 * a * c)))/ (2 * a));
-    let zeros_answer_2 = round_user((-1 * b) - (Math.sqrt(b**2 - (4 * a * c)))/ (2 * a));
+    let zeros_answer_1 = round_user(((-1*b)+ Math.sqrt((b**2)-4 * a * c))/(2*a));
+    let zeros_answer_2 = round_user(((-1*b)- Math.sqrt((b**2)-4 * a * c))/(2*a));
     document.getElementById("quadratic_zeros_output").textContent = `The quadratic's zeros are (${zeros_answer_1},0) and (${zeros_answer_2},0).`;
     console.log(`Zeroes are (${zeros_answer_1},0) and (${zeros_answer_2},0).`); 
 }
@@ -144,6 +144,6 @@ function vertex() {
     let c = Number(document.getElementById("c").value);
     let x = round_user((-1 * b)/(2 * a));
     let y = round_user(y_quad(a, b, c, x));
-    document.getElementById("quadratic_vertex_output").textContent = `The quadratic vertex is (${x},${y}).`;
+    document.getElementById("quadratic_vertex_output").textContent = `The quadratic's vertex is (${x},${y}).`;
     console.log(`Vertex is (${x},${y})`);
 }
